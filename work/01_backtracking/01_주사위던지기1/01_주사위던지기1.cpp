@@ -67,7 +67,7 @@ void recur4(int k, int start) {
 }
 
 int main() {
-    freopen("../input.txt", "r", stdin);
+    freopen("input.txt", "r", stdin);
     scanf("%d %d", &N, &M);
 
     if (M == 1) recur1(0);          // 3 1

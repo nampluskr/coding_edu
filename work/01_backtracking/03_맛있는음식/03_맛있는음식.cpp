@@ -32,7 +32,7 @@ void recur2(int k, int s, int b, int selected) {
 }
 
 int main() {
-    freopen("../input.txt", "r", stdin);
+    freopen("input.txt", "r", stdin);
 
     scanf("%d", &N);
     for (int i = 0; i < N; i++)

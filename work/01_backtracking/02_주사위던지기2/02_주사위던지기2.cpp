@@ -55,7 +55,7 @@ void recur2(int k, int sum) {
 }
 
 int main() {
-    freopen("../input.txt", "r", stdin);
+    freopen("input.txt", "r", stdin);
     scanf("%d %d", &N, &M);                     // 3 10
 
     cnt = 0;
