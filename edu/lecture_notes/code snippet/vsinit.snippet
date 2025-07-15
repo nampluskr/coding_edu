@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>vs initial snippet</Title>
+			<Shortcut>vsinitial</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+				</Literal>
+			</Declarations>
+			<Code Language="CPP">
+				<![CDATA[/*
+$name$
+*/
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(){
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+#endif
+$end$
+return 0;
+}
+]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
