@@ -86,25 +86,25 @@ void _house(int sr, int er) {
 		if (H[i].y > maxY && !visit[i] && H[i].y >= sr && H[i].y <= er) {
 			idx = i, maxY = H[i].y, y = H[i].y, x = H[i].x;
 		}
-	visit[idx] = i; p[0] = { x, y };
+	visit[idx] = 1; p[0] = { x, y };
 	
 	for (i = 0; i < N; i++)
 		if (H[i].y < minY && !visit[i] && H[i].y >= sr && H[i].y <= er) {
 			idx = i, minY = H[i].y; y = H[i].y, x = H[i].x;
 		}
-	visit[idx] = i; p[1] = { x, y };
+	visit[idx] = 1; p[1] = { x, y };
 
 	for (i = 0; i < N; i++)
 		if (H[i].x > maxX && !visit[i] && H[i].y >= sr && H[i].y <= er) {
 			idx = i, maxX = H[i].x; y = H[i].y, x = H[i].x;
 		}
-	visit[idx] = i; p[2] = { x, y };
+	visit[idx] = 1; p[2] = { x, y };
 
 	for (i = 0; i < N; i++)
 		if (H[i].x < minX && !visit[i] && H[i].y >= sr && H[i].y <= er) {
 			idx = i, minX = H[i].x; y = H[i].y, x = H[i].x;
 		}
-	visit[idx] = i; p[3] = { x, y };
+	visit[idx] = 1; p[3] = { x, y };
 
 	house(p);
 }
