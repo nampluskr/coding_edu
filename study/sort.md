@@ -59,7 +59,7 @@ int main() {
 	printf("\n");
 
 	mergeSort(arr, 0, n - 1, Less());		print(arr, 0, n - 1);	// 오름차순
-	mergeSort(arr, 0, n - 1, Greater());	print(arr, 0, n - 1);	// 내림차순
+	mergeSort(arr, 0, n - 1, Greater());		print(arr, 0, n - 1);	// 내림차순
 	printf("\n");
 
 	mergeSort(arr, 0, n - 1, less);			print(arr, 0, n - 1);	// 오름차순
