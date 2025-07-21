@@ -52,10 +52,10 @@ int main() {
 	for (int i = 0; i < n; i++) maxHeap.push(arr[i]);
 	print(maxHeap.heap, 1, n);
 
-    while (!maxHeap.empty()) {
-        Data top = maxHeap.top(); maxHeap.pop();
+	while (!maxHeap.empty()) {
+        	Data top = maxHeap.top(); maxHeap.pop();
 		printf("(%d, %d) ", top.id, top.value);
-    }
+    	}
 	printf("\n\n");
 
 	// Min Heap
