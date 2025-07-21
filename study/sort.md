@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 struct Data { int id, value; };
-
 struct Less {
 	bool operator()(const Data& a, const Data& b) const { return a.value < b.value; }
 };
