@@ -1,7 +1,7 @@
 #### Graph
 ```cpp
 struct Node { int to, cost; };
-Vector<Node> adjList[MAX_NUM];
+List<Node> adjList[MAX_NUM];
 
 // Adjacency List
 void addNode(int from, int to, int cost) {
@@ -37,11 +37,10 @@ bool bfs(int s, int e) {
 
 #### Dijkstra
 ```cpp
-bool less(const Node& a, const Node& b) { return a.cost < b.cost; }
 int dist[MAX_NUM];
 
 void dijkstra(int s, int e) {
-	PriorityQueue<Node, less> pq; // Max Heap
+	PriorityQueue<Node, Less> pq; // Max Heap
 	for (int i = 0; i < MAX_NUM; i++) dist[i] = 1e6;
 
 	dist[s] = 0;
